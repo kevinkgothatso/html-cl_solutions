@@ -1,14 +1,17 @@
-html,body{
+
+body{
     font-size: 16px;
     margin: 0px; /*note this*/
     height: 100%;
+    font-family: 'Rowdies', cursive;
+    background-color: gainsboro;
+/*    overflow-y: hidden; to enable when done */
 }
 
 #main{
 /*main wrapper*/
     height: 97vh;
-    background-color: gainsboro;
-    overflow-x: hidden;
+    background-color: inherit;
 }
 
 #main-count{
@@ -16,61 +19,59 @@ html,body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: nowrap;
-    
-    margin:auto;
-    margin-top: 40vh;
-    background-color: black;
-    width: 60%;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 40%;
 }
-#main-date{
-    /* date naming*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    
-    margin: auto;
-    width: 60%;
-}
-
 
 .item-counter{
-/*    items to have width and hieght*/
-    background-color: white;
+    width: 7em;
+    height: 7em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.item-circle{
+   background-color: black;
     width: 7em;
     height: 7em;
     text-align: center;
     vertical-align: middle;
-    margin: 2%;
     border-radius: 50%;
-     background-color: white;
-}
-.item-date{
-  text-align: center;
-    background-color: white;
-    width: 100%;
-    margin: 2%;
+    color: white;
 }
 
-.item-counter span{
-    /*to make the text top centered*/
+#day, #hours ,#minutes, #seconds{
+     /*to make the text top centered*/
    position: relative;
-   top: 40%;
+   top: 20%;
+   font-size:3em; 
 }
-
-
 #footer{
     text-align: center;
     background-color: black;
     color: white;
-    height: 3vh;
      width: 100%;
 }
 
 @font-face{
     font-family:'Rowdies', cursive;
     src:url("./fonts/Rowdies-Light.ttf");
+}
+
+#name-company{
+    font-weight: bolder;
+    color: blue; 
+}
+
+#wording{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+p > span{
+    text-transform: uppercase;
 }
