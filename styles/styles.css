@@ -1,0 +1,76 @@
+html,body{
+    font-size: 16px;
+    margin: 0px; /*note this*/
+    height: 100%;
+}
+
+#main{
+/*main wrapper*/
+    height: 97vh;
+    background-color: gainsboro;
+    overflow-x: hidden;
+}
+
+#main-count{
+/* date counter*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    margin:auto;
+    margin-top: 40vh;
+    background-color: black;
+    width: 60%;
+}
+#main-date{
+    /* date naming*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    margin: auto;
+    width: 60%;
+}
+
+
+.item-counter{
+/*    items to have width and hieght*/
+    background-color: white;
+    width: 7em;
+    height: 7em;
+    text-align: center;
+    vertical-align: middle;
+    margin: 2%;
+    border-radius: 50%;
+     background-color: white;
+}
+.item-date{
+  text-align: center;
+    background-color: white;
+    width: 100%;
+    margin: 2%;
+}
+
+.item-counter span{
+    /*to make the text top centered*/
+   position: relative;
+   top: 40%;
+}
+
+
+#footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 3vh;
+     width: 100%;
+}
+
+@font-face{
+    font-family:'Rowdies', cursive;
+    src:url("./fonts/Rowdies-Light.ttf");
+}
