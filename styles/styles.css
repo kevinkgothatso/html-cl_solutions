@@ -61,6 +61,16 @@ body{
     src:url("./fonts/Rowdies-Light.ttf");
 }
 
+@font-face{
+    font-family:"Oswald";
+    src:url("./fonts/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family:"Kanit-Light";
+    src:url("./fonts/Kanit-Light.ttf"); 
+}
+
 #name-company{
     font-weight: bolder;
     color: blue; 
@@ -72,6 +82,24 @@ body{
     text-align: center;
     text-transform: capitalize;
 }
+
+.col-1 , .col-2{
+    background-color: orangered;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 p > span{
     text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 3em;
+    word-spacing: 0.4em;
+    font-weight: 600;
 }
+
+.container{
+    margin: auto;
+    width: 50%;
+}
+
