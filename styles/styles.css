@@ -1,14 +1,15 @@
 
 body{
-    font-size: 16px;
+    font-size: 16px important;
     margin: 0px; /*note this*/
     height: 100%;
-    font-family: 'Rowdies', cursive;
-    background-color: gainsboro;
+    font-family: 'Rowdies', cursive !important;
+    background-color: gainsboro !important;
+    line-height: normal !important;
 /*    overflow-y: hidden; to enable when done */
 }
 
-#main{
+#main-wrapper{
 /*main wrapper*/
     height: 97vh;
     background-color: inherit;
@@ -20,20 +21,14 @@ body{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: nowrap;
-    width: 50%;
-    position: absolute;
-    left: 25%;
-    top: 40%;
-}
-
-.item-counter{
-    width: 7em;
-    height: 7em;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 5% 0 5% 0;
 }
+
 .item-circle{
+/*    time count numerics*/
    background-color: black;
     width: 7em;
     height: 7em;
@@ -43,7 +38,7 @@ body{
     color: white;
 }
 
-#day, #hours ,#minutes, #seconds{
+#days, #hours ,#minutes, #seconds{
      /*to make the text top centered*/
    position: relative;
    top: 20%;
@@ -66,11 +61,6 @@ body{
     src:url("./fonts/Oswald-VariableFont_wght.ttf");
 }
 
-@font-face{
-    font-family:"Kanit-Light";
-    src:url("./fonts/Kanit-Light.ttf"); 
-}
-
 #name-company{
     font-weight: bolder;
     color: blue; 
@@ -83,22 +73,23 @@ body{
     text-transform: capitalize;
 }
 
-.col-1 , .col-2{
-    background-color: orangered;
+.colx-1 , .colx-2{
+    background-color: transparent;
     width: 100%;
     margin-bottom: 10px;
     text-align: center;
+    padding: 5% 0 5% 0;
 }
 
 p > span{
     text-transform: uppercase;
     font-family: 'Oswald';
     font-size: 3em;
-    word-spacing: 0.4em;
+    word-spacing: 0.25em;
     font-weight: 600;
 }
 
-.container{
+.containerx{
     margin: auto;
     width: 50%;
 }
