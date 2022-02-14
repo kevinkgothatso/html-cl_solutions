@@ -1,5 +1,12 @@
 
+ //setting the footer year
+ var date = new Date();
+ var date_footer= date.getFullYear();
+ var date_footer_ele = document.getElementById("year");
+ date_footer_ele.innerText = date_footer;
 
+
+ //setting the time date until launch
 var timeFrame = setInterval(function(){
     var currentDatex = new Date(2022,02,01,12,3,33);
 var datex = new Date();
@@ -21,3 +28,8 @@ var datex = new Date();
      ss.innerText = seconds;
   
 },1);
+
+// activating carousel 
+$('.carousel').carousel({interval: 1000});
+
+
